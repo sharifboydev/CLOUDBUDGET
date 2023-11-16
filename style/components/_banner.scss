@@ -1,0 +1,59 @@
+.banner {
+    width: 100%;
+    height: 782px;
+    text-align: center;
+    position: relative;
+    @include flexCenter;
+    background-size: cover;
+    background-image: url(../../image/images/banner-img.png);
+
+    &-info {
+        position: relative;
+        z-index: 1;
+        @include flex;
+        row-gap: 39px;
+        flex-direction: column;
+
+        &_title {
+            color: $light;
+            font-family: $LB;
+            font-size: $xl;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+        }
+
+        &_text {
+            max-width: 500px;
+            width: 100%;
+            color: $light;
+            font-family: $LB;
+            font-size: 24px;
+            line-height: 150%;
+        }
+
+        &_btn {
+            font-size: $sm;
+            color: $primary;
+            cursor: pointer;
+            font-family: $LB;
+            transition: 0.4s;
+            padding: 16px 52px;
+            border-radius: 6px;
+            background: $light;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%);
+    }
+}

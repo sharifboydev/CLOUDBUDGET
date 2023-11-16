@@ -1,6 +1,9 @@
 .page-header {
     width: 100%;
-    background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     .header-content {
         @include flexBetween;
