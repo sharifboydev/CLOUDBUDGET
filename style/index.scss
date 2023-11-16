@@ -1,3 +1,10 @@
 // General styles
 
-@import "../style/components/header";
+@import "./settings/fonts";
+@import "./settings/settings";
+@import "./variable/root";
+@import "./mixins/mixin";
+
+// Components
+
+@import "./components/header";
