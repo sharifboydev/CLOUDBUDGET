@@ -26,4 +26,81 @@
 button {
   border: none;
   background-color: transparent;
+}
+
+.page-header {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+.page-header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 44px;
+}
+.page-header .header-content .logo {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Lato-Bold";
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  text-transform: uppercase;
+}
+.page-header .header-content .logo-img {
+  width: 25px;
+  height: auto;
+}
+.page-header .header-content .header-nav {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.page-header .header-content .header-nav_link {
+  color: #ffffff;
+  font-family: "Lato-Bold";
+  font-size: 14px;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.page-header .header-content .header-nav_link:hover {
+  transform: scale(0.9);
+}
+.page-header .header-content .btn-group {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  cursor: pointer;
+}
+.page-header .header-content .btn-group .lang-btn {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  color: #ffffff;
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.page-header .header-content .btn-group .lang-btn_img {
+  width: 32px;
+  height: 32px;
+}
+.page-header .header-content .btn-group .login-btn {
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Lato-Regular";
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+}
+.page-header .header-content .btn-group .login-btn:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,78 @@
+.page-header {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%);
+
+    .header-content {
+        @include flexBetween;
+        padding-block: 44px;
+
+        .logo {
+            color: $light;
+            @include flex;
+            font-size: $md;
+            font-family: $LB;
+            column-gap: 10px;
+            text-transform: uppercase;
+
+            &-img {
+                width: 25px;
+                height: auto;
+            }
+        }
+
+        .header-nav {
+            @include flex;
+            column-gap: 20px;
+
+            &_link {
+                color: $light;
+                font-family: $LB;
+                font-size: $sm;
+                transition: 0.4s;
+                text-transform: uppercase;
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+
+        }
+
+        .btn-group {
+            @include flex;
+            column-gap: 20px;
+            cursor: pointer;
+
+            .lang-btn {
+                @include flex;
+                column-gap: 11px;
+                color: $light;
+                font-family: $LR;
+                font-size: $sm;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                &_img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .login-btn {
+                color: $light;
+                font-size: $sm;
+                cursor: pointer;
+                transition: .4s;
+                font-family: $LR;
+                padding: 12px 28px;
+                border-radius: 6px;
+                border: 1px solid $light;
+                text-transform: uppercase;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
