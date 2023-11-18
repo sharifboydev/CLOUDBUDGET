@@ -15,9 +15,7 @@
 
 .content-info {
     &_title {
-        font-size: $lg;
-        font-family: $LB;
-        color: $secondary;
+        @include title;
         margin-bottom: 42px;
     }
 

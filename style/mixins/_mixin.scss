@@ -12,3 +12,9 @@
     @include flex;
     justify-content: space-between;
 }
+
+@mixin title {
+    color: $secondary;
+    font-family: $LB;
+    font-size: $lg;
+}
