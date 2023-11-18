@@ -1,0 +1,66 @@
+.features {
+    width: 100%;
+    background-color: #FAFAFA;
+    
+    &-content {
+        padding-block: 63px 124px;
+
+        &_title {
+            @include title;
+            text-align: center;
+            margin-bottom: 63px;
+        }
+
+        &_info {
+            @include flex;
+            column-gap: 30px;
+        }
+    }
+}
+
+.features-data {
+    
+    &_item {
+        z-index: 1;
+        position: relative;
+
+    }
+
+    &_element {
+        max-width: 293px;
+        width: 100%;
+        @include flex;
+        position: absolute;
+        top: 70%;
+        left: 8%;
+        border-radius: 8px;
+        padding: 33px 20px 25px;
+        flex-direction: column;
+        background-color: $light;
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &_img {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    &_title,
+    &_text {
+        max-width: 229px;
+        width: 100%;
+        @include titleText;
+        text-align: center;
+    }
+
+    &_text {
+        @include text;
+        margin-block: 20px 24px;
+    }
+
+    &_btn {
+        font-size: $xs;
+        color: $primary;
+        font-family: $LB;
+    }
+}

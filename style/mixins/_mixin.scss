@@ -18,3 +18,15 @@
     font-family: $LB;
     font-size: $lg;
 }
+
+@mixin text {
+    color: $dark;
+    font-size: $xs;
+    font-family: $LR;
+}
+
+@mixin titleText {
+    color: $dark;
+    font-size: $md;
+    font-family: $LB;
+}

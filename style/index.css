@@ -221,4 +221,67 @@ button {
   justify-content: center;
   background-color: #ed4c5c;
   transform: translateY(-50%);
+}
+
+.features {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+.features-content {
+  padding-block: 63px 124px;
+}
+.features-content_title {
+  color: #000000;
+  font-family: "Lato-Bold";
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 63px;
+}
+.features-content_info {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.features-data_item {
+  z-index: 1;
+  position: relative;
+}
+.features-data_element {
+  max-width: 293px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 8%;
+  border-radius: 8px;
+  padding: 33px 20px 25px;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.features-data_img {
+  max-width: 350px;
+  width: 100%;
+}
+.features-data_title, .features-data_text {
+  max-width: 229px;
+  width: 100%;
+  color: #101010;
+  font-size: 18px;
+  font-family: "Lato-Bold";
+  text-align: center;
+}
+.features-data_text {
+  color: #101010;
+  font-size: 12px;
+  font-family: "Lato-Regular";
+  margin-block: 20px 24px;
+}
+.features-data_btn {
+  font-size: 12px;
+  color: #ed4c5c;
+  font-family: "Lato-Bold";
 }/*# sourceMappingURL=index.css.map */
