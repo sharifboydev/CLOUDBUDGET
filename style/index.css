@@ -197,4 +197,28 @@ button {
 .content-info_link {
   color: #ed4c5c;
   margin-bottom: 0;
+}
+
+.content-media {
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;
+}
+.content-media_img {
+  width: 100%;
+}
+.content-media_play {
+  top: 50%;
+  z-index: 2;
+  left: -33px;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed4c5c;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=index.css.map */

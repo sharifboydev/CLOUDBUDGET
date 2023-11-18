@@ -36,3 +36,27 @@
         margin-bottom: 0;
     }
 }
+
+.content-media {
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+
+    &_img {
+        width: 100%;
+    }
+
+    &_play {
+        top: 50%;
+        z-index: 2;
+        left: -33px;
+        width: 66px;
+        height: 66px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        @include flexCenter;
+        background-color: $primary;
+        transform: translateY(-50%);
+    }
+}
