@@ -163,4 +163,38 @@ button {
   top: 0;
   left: 0;
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+
+.managment {
+  width: 100%;
+}
+.managment-content {
+  gap: 30px;
+  margin-block: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.managment-content_info {
+  max-width: 445px;
+  width: 100%;
+}
+
+.content-info_title {
+  font-size: 36px;
+  font-family: "Lato-Bold";
+  color: #000000;
+  margin-bottom: 42px;
+}
+.content-info_text, .content-info_link {
+  font-size: 14px;
+  font-family: "Lato-Regular";
+  line-height: 140%;
+  color: #000000;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+.content-info_link {
+  color: #ed4c5c;
+  margin-bottom: 0;
 }/*# sourceMappingURL=index.css.map */

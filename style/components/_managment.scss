@@ -1,0 +1,38 @@
+.managment {
+    width: 100%;
+
+    &-content {
+        gap: 30px;
+        margin-block: 94px;
+        @include flexBetween;
+
+        &_info {
+            max-width: 445px;
+            width: 100%;
+        }
+    }
+}
+
+.content-info {
+    &_title {
+        font-size: $lg;
+        font-family: $LB;
+        color: $secondary;
+        margin-bottom: 42px;
+    }
+
+    &_text,
+    &_link {
+        font-size: $sm;
+        font-family: $LR;
+        line-height: 140%;
+        color: $secondary;
+        text-align: justify;
+        margin-bottom: 16px;
+    }
+
+    &_link {
+        color: $primary;
+        margin-bottom: 0;
+    }
+}
