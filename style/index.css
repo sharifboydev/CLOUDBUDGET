@@ -284,4 +284,61 @@ button {
   font-size: 12px;
   color: #ed4c5c;
   font-family: "Lato-Bold";
+}
+
+.technology {
+  width: 100%;
+}
+.technology-content {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-block: 63px 104px;
+}
+.technology-content_title {
+  color: #000000;
+  font-family: "Lato-Bold";
+  font-size: 36px;
+  margin-bottom: 52px;
+}
+.technology-content_info {
+  display: flex;
+  align-items: center;
+}
+
+.technology-data {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.technology-data_item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+}
+.technology-data_number {
+  font-size: 100px;
+  font-family: "Lato-Bold";
+  color: rgba(16, 16, 16, 0.08);
+}
+.technology-data_img {
+  position: absolute;
+  top: 60px;
+}
+.technology-data_title {
+  color: #101010;
+  font-size: 18px;
+  font-family: "Lato-Bold";
+  margin-block: 15px 10px;
+}
+.technology-data_text {
+  max-width: 191px;
+  width: 100%;
+  color: #101010;
+  font-size: 12px;
+  font-family: "Lato-Regular";
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

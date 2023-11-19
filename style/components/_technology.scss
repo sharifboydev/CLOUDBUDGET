@@ -1,0 +1,53 @@
+.technology {
+    width: 100%;
+
+    &-content {
+        gap: 30px;
+        @include flexBetween;
+        flex-direction: column;
+        margin-block: 63px 104px;
+
+        &_title {
+            @include title;
+            margin-bottom: 52px;
+        }
+
+        &_info {
+            @include flex;
+        }
+    }
+}
+
+.technology-data {
+    column-gap: 30px;
+
+    &_item {
+        @include flex;
+        position: relative;
+        z-index: 1;
+        flex-direction: column;
+    }
+
+    &_number {
+        font-size: 100px;
+        font-family: $LB;
+        color: rgba(16, 16, 16, 0.08);
+    }
+
+    &_img {
+        position: absolute;
+        top: 60px;
+    }
+
+    &_title {
+        @include titleText;
+        margin-block: 15px 10px;
+    }
+
+    &_text {
+        max-width: 191px;
+        width: 100%;
+        @include text;
+        text-align: center;
+    }
+}
