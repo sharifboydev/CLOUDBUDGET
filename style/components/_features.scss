@@ -1,9 +1,9 @@
 .features {
     width: 100%;
     background-color: #FAFAFA;
-    
+
     &-content {
-        padding-block: 63px 124px;
+        padding-block: 63px 229px;
 
         &_title {
             @include title;
@@ -19,7 +19,7 @@
 }
 
 .features-data {
-    
+
     &_item {
         z-index: 1;
         position: relative;
@@ -61,6 +61,7 @@
     &_btn {
         font-size: $xs;
         color: $primary;
+        cursor: pointer;
         font-family: $LB;
     }
 }

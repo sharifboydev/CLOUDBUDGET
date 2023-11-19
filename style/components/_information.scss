@@ -1,0 +1,44 @@
+.information {
+    width: 100%;
+    background-color: $primary;
+
+    &-content {
+        column-gap: 81px;
+        padding-block: 94px 95px;
+
+        &_img {
+            max-width: 533px;
+            width: 100%
+        }
+    }
+
+    &-item {
+        @include flexBetween;
+
+        &_blog {
+            width: 100%;
+        }
+
+        &_title {
+            max-width: 363px;
+            width: 100%;
+            color: $light;
+            font-family: $LB;
+            font-size: $lg;
+        }
+
+        &_text {
+            color: $light;
+            font-size: $sm;
+            font-family: $LR;
+            text-align: justify;
+            margin-block: 40px 47px;
+        }
+
+        &_group {
+            @include flex;
+            cursor: pointer;
+            column-gap: 23px;
+        }
+    }
+}

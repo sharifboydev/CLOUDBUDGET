@@ -19,12 +19,12 @@
 }
 
 .technology-data {
-    column-gap: 30px;
+    column-gap: 100px;
 
     &_item {
+        z-index: 1;
         @include flex;
         position: relative;
-        z-index: 1;
         flex-direction: column;
     }
 
@@ -41,7 +41,7 @@
 
     &_title {
         @include titleText;
-        margin-block: 15px 10px;
+        margin-block: 19px 10px;
     }
 
     &_text {

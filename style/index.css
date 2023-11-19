@@ -228,7 +228,7 @@ button {
   background-color: #FAFAFA;
 }
 .features-content {
-  padding-block: 63px 124px;
+  padding-block: 63px 229px;
 }
 .features-content_title {
   color: #000000;
@@ -283,6 +283,7 @@ button {
 .features-data_btn {
   font-size: 12px;
   color: #ed4c5c;
+  cursor: pointer;
   font-family: "Lato-Bold";
 }
 
@@ -309,14 +310,14 @@ button {
 }
 
 .technology-data {
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 .technology-data_item {
+  z-index: 1;
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 1;
   flex-direction: column;
 }
 .technology-data_number {
@@ -332,7 +333,7 @@ button {
   color: #101010;
   font-size: 18px;
   font-family: "Lato-Bold";
-  margin-block: 15px 10px;
+  margin-block: 19px 10px;
 }
 .technology-data_text {
   max-width: 191px;
@@ -341,4 +342,47 @@ button {
   font-size: 12px;
   font-family: "Lato-Regular";
   text-align: center;
+}
+
+.information {
+  width: 100%;
+  background-color: #ed4c5c;
+}
+.information-content {
+  -moz-column-gap: 81px;
+       column-gap: 81px;
+  padding-block: 94px 95px;
+}
+.information-content_img {
+  max-width: 533px;
+  width: 100%;
+}
+.information-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.information-item_blog {
+  width: 100%;
+}
+.information-item_title {
+  max-width: 363px;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Lato-Bold";
+  font-size: 36px;
+}
+.information-item_text {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Lato-Regular";
+  text-align: justify;
+  margin-block: 40px 47px;
+}
+.information-item_group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
 }/*# sourceMappingURL=index.css.map */
