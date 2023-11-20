@@ -1,0 +1,85 @@
+.contact {
+    width: 100%;
+
+    &-item {
+        @include flexBetween;
+        margin-block: 117px 78px;
+
+        &_info {
+            max-width: 445px;
+            width: 100%;
+        }
+    }
+
+    &-blog {
+
+        &_title {
+            @include title;
+            margin-bottom: 30px;
+        }
+
+        &_text {
+            max-width: 350px;
+            width: 100%;
+            @include text;
+        }
+    }
+
+    &-forms {
+        @include flexCenter;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &-box {
+        @include flex;
+        column-gap: 30px;
+
+        &_input {
+            width: 255px;
+            height: 60px;
+            font-family: $LR;
+            font-size: $normal;
+            padding: 20px 31px;
+            border-radius: 6px;
+            color: rgba(19, 39, 67, 0.50);
+            border: 1px solid var(--Gray-1, #333);
+        }
+    }
+
+    &-form {
+        @include flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        &_input {
+            width: 540px;
+            height: 60px;
+            font-family: $LR;
+            font-size: $normal;
+            padding: 20px 31px;
+            border-radius: 6px;
+            color: rgba(19, 39, 67, 0.50);
+            border: 1px solid var(--Gray-1, #333);
+        }
+
+        &_btn {
+            color: $light;
+            font-size: $sm;
+            cursor: pointer;
+            transition: .5s;
+            font-family: $LR;
+            padding: 17px 34px;
+            border-radius: 6px;
+            background: $primary;
+            align-self: flex-start;
+            text-transform: uppercase;
+            border: 1.5px solid $primary;
+
+            &:hover {
+                color: $primary;
+                background-color: $light;
+            }
+        }
+    }
+}
