@@ -302,7 +302,7 @@ button {
   color: #000000;
   font-family: "Lato-Bold";
   font-size: 36px;
-  margin-bottom: 52px;
+  margin-bottom: 63px;
 }
 .technology-content_info {
   display: flex;
@@ -407,10 +407,10 @@ button {
   margin-bottom: 30px;
 }
 .contact-blog_text {
-  max-width: 350px;
+  max-width: 434px;
   width: 100%;
   color: #101010;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Lato-Regular";
 }
 .contact-forms {
@@ -423,12 +423,16 @@ button {
 .contact-box {
   display: flex;
   align-items: center;
+  width: 100%;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 .contact-box_input {
-  width: 255px;
+  max-width: 255px;
+  width: 100%;
   height: 60px;
+  display: flex;
+  align-items: center;
   font-family: "Lato-Regular";
   font-size: 16px;
   padding: 20px 31px;

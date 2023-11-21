@@ -19,9 +19,11 @@
         }
 
         &_text {
-            max-width: 350px;
+            max-width: 434px;
             width: 100%;
-            @include text;
+            color: $dark;
+            font-size: $sm;
+            font-family: $LR;
         }
     }
 
@@ -33,11 +35,14 @@
 
     &-box {
         @include flex;
+        width: 100%;
         column-gap: 30px;
 
         &_input {
-            width: 255px;
+            max-width: 255px;
+            width: 100%;
             height: 60px;
+            @include flex;
             font-family: $LR;
             font-size: $normal;
             padding: 20px 31px;
