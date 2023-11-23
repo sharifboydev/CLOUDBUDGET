@@ -472,4 +472,9 @@ button {
 .contact-form_btn:hover {
   color: #ed4c5c;
   background-color: #ffffff;
+}
+
+.footer-content {
+  padding-block: 85px;
+  background-color: #FAFAFA;
 }/*# sourceMappingURL=index.css.map */
