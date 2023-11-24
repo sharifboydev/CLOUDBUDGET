@@ -1,89 +1,86 @@
 .contact {
-    width: 100%;
+    padding-block: 117px 78px;
 
-    &-item {
-        @include flexBetween;
-        margin-block: 117px 78px;
-
-        &_info {
-            max-width: 445px;
-            width: 100%;
-        }
+    &-content {
+        @include flex;
+        column-gap: 30px;
+        align-items: start;
     }
 
-    &-blog {
+    .contact-info {
+        max-width: 540px;
+        width: 100%;
 
         &_title {
             @include title;
-            margin-bottom: 30px;
+            margin-bottom: 56px;
         }
 
         &_text {
             max-width: 434px;
             width: 100%;
-            color: $dark;
             font-size: $sm;
             font-family: $LR;
+            color: $secondary;
+            line-height: 140%;
         }
     }
 
-    &-forms {
-        @include flexCenter;
-        flex-direction: column;
-        row-gap: 30px;
-    }
-
-    &-box {
-        @include flex;
+    .contact-form {
+        max-width: 540px;
         width: 100%;
-        column-gap: 30px;
 
-        &_input {
-            max-width: 255px;
-            width: 100%;
-            height: 60px;
+        &_form {
+            gap: 25px;
+            flex-wrap: wrap;
             @include flex;
-            font-family: $LR;
-            font-size: $normal;
-            padding: 20px 31px;
-            border-radius: 6px;
-            color: rgba(19, 39, 67, 0.50);
-            border: 1px solid var(--Gray-1, #333);
-        }
-    }
 
-    &-form {
-        @include flex;
-        flex-direction: column;
-        row-gap: 30px;
+            &-name {
+                width: 255px;
+                @include input;
+            }
 
-        &_input {
-            width: 540px;
-            height: 60px;
-            font-family: $LR;
-            font-size: $normal;
-            padding: 20px 31px;
-            border-radius: 6px;
-            color: rgba(19, 39, 67, 0.50);
-            border: 1px solid var(--Gray-1, #333);
-        }
+            &-tel {
+                width: 100%;
+                @include input;
+            }
 
-        &_btn {
-            color: $light;
-            font-size: $sm;
-            cursor: pointer;
-            transition: .5s;
-            font-family: $LR;
-            padding: 17px 34px;
-            border-radius: 6px;
-            background: $primary;
-            align-self: flex-start;
-            text-transform: uppercase;
-            border: 1.5px solid $primary;
+            .select {
+                width: 100%;
+                position: relative;
 
-            &:hover {
-                color: $primary;
-                background-color: $light;
+                &::after {
+                    content: url(../../image/icons/arrow-down-dpwn-icon.svg);
+                    position: absolute;
+                    top: 50%;
+                    right: 26px;
+                    transform: translateY(-50%);
+                }
+
+                select {
+                    width: 100%;
+                    @include input;
+                    -webkit-appearance: none;
+                }
+            }
+
+            .submit-btn {
+                color: $light;
+                font-size: $sm;
+                transition: .4s;
+                font-family: $LR;
+                padding: 17px 34px;
+                border-radius: 6px;
+                text-transform: uppercase;
+                background-color: $primary;
+                border: 1.5px solid $primary;
+
+                &:hover {
+                    color: $primary;
+                    cursor: pointer;
+                    background-color: $light;
+                    border: 1.5px solid primary;
+                }
             }
         }
     }

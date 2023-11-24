@@ -30,3 +30,23 @@
     font-size: $md;
     font-family: $LB;
 }
+
+@mixin input {
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-family: $LR;
+    font-size: $md;
+    outline: 1px solid #333;
+    text-transform: capitalize;
+    color: rgba(19, 39, 67, 0.50);
+
+    &:focus {
+        outline: 1px solid $primary;
+    }
+
+    &::placeholder {
+        font-family: $LR;
+        font-size: $normal;
+        color: rgba(19, 39, 67, 0.50);
+    }
+}

@@ -13,7 +13,10 @@
     padding: 0 20px;
 }
 
-button {
+input,
+button,
+select,
+textarea,
+option {
     border: none;
-    background-color: transparent;
 }
