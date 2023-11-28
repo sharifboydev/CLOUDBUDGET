@@ -7,6 +7,22 @@
     background-size: cover;
     background-image: url(../../image/images/banner-img.png);
 
+    @include media(993) {
+        height: 700px;
+    }
+
+    @include media(768) {
+        height: 600px;
+    }
+
+    @include media(576) {
+        height: 500px;
+    }
+
+    @include media(420) {
+        height: 450px;
+    }
+
     &-info {
         position: relative;
         z-index: 1;
@@ -14,12 +30,44 @@
         row-gap: 39px;
         flex-direction: column;
 
+        @include media(993) {
+            row-gap: 30px;
+        }
+
+        @include media(768) {
+            row-gap: 20px;
+        }
+
+        @include media(576) {
+            row-gap: 15px;
+        }
+
         &_title {
             color: $light;
             font-family: $LB;
             font-size: $xl;
             letter-spacing: 3.6px;
             text-transform: uppercase;
+
+            @include media(993) {
+                font-size: 60px;
+            }
+
+            @include media(768) {
+                font-size: 50px;
+            }
+
+            @include media(576) {
+                font-size: 40px;
+            }
+
+            @include media(375) {
+                font-size: 35px;
+            }
+
+            @include media(350) {
+                font-size: 30px;
+            }
         }
 
         &_text {
@@ -29,6 +77,18 @@
             font-family: $LB;
             font-size: 24px;
             line-height: 150%;
+
+            @include media(993) {
+                font-size: 20px;
+            }
+
+            @include media(768) {
+                font-size: 16px;
+            }
+
+            @include media(576) {
+                font-size: 14px;
+            }
         }
 
         &_btn {
@@ -43,6 +103,15 @@
 
             &:hover {
                 transform: scale(1.1);
+            }
+
+            @include media(768) {
+                padding: 14px 40px;
+            }
+
+            @include media(375) {
+                font-size: $xs;
+                padding: 12px 30px;
             }
         }
     }
