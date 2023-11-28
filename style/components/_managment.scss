@@ -1,14 +1,35 @@
 .managment {
     width: 100%;
 
+    @include media(768) {
+        padding-block: 60px;
+    }
+
+    @include media(576) {
+        padding-block: 40px;
+    }
+
+    @include media(420) {
+        padding-block: 30px;
+    }
+
     &-content {
         gap: 30px;
         margin-block: 94px;
         @include flexBetween;
 
+        @include media(700) {
+            flex-direction: column;
+            margin-block: 50px;
+        }
+
         &_info {
             max-width: 445px;
             width: 100%;
+
+            @include media(700) {
+                text-align: center;
+            }
         }
     }
 }
@@ -17,6 +38,18 @@
     &_title {
         @include title;
         margin-bottom: 42px;
+
+        @include media(785) {
+            margin-bottom: 25px;
+        }
+
+        @include media(700) {
+            text-align: center;
+        }
+
+        @include media(420) {
+            font-size: 29px;
+        }
     }
 
     &_text,
@@ -27,6 +60,10 @@
         color: $secondary;
         text-align: justify;
         margin-bottom: 16px;
+
+        @include media(700) {
+            text-align: center;
+        }
     }
 
     &_link {
@@ -56,5 +93,15 @@
         @include flexCenter;
         background-color: $primary;
         transform: translateY(-50%);
+
+        @include media(700) {
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        @include media(420) {
+            width: 50px;
+            height: 50px;
+        }
     }
 }
