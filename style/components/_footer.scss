@@ -1,0 +1,67 @@
+.footer {
+    background-color: #FAFAFA;
+
+    &-content {
+        @include flexBetween;
+        padding-block: 85px;
+
+        &_info {
+            @include flex;
+            flex-direction: column;
+            row-gap: 33px;
+        }
+    }
+
+    &-info {
+        @include flex;
+        flex-direction: column;
+
+        &_title {
+            color: $dark;
+            font-size: $md;
+            font-family: $LB;
+            align-self: flex-start;
+        }
+
+        &_text {
+            width: 140px;
+            @include text;
+            line-height: 150%;
+        }
+    }
+
+    .info-text {
+        width: 50px;
+        line-height: 160%;
+    }
+
+    &-item {
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &_mail,
+        &_phone {
+            @include text;
+        }
+
+        &_phone {
+            margin-block: 11px 20px;
+        }
+
+        &_image {
+            @include flex;
+            column-gap: 12px;
+
+            &>img {
+                cursor: pointer;
+            }
+        }
+    }
+
+    span {
+        @include text;
+        @include flex;
+        padding-bottom: 86px;
+    }
+}
